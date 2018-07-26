@@ -1,0 +1,437 @@
+$logo: #5f5f5f;
+$h1: #000;
+$hover: #ff9000;
+$thin: #cfcfcf;
+$bold: #727272;
+$span: #9c9c9c;
+
+@font-face
+	font-family: OpenSansRegular
+	src: url('../fonts/OpenSansRegular.eot')
+	src: url('../fonts/OpenSansRegular.eot?#iefix') format("embedded-opentype"),
+	url('../fonts/OpenSansRegular.woff2') format("woff2"),
+	url('../fonts/OpenSansRegular.woff') format("woff"),
+	url('../fonts/OpenSansRegular.ttf') format("truetype")
+
+body
+	font-family: OpenSansRegular, Arial, sans-serif !important;
+
+a
+	color: $bold !important;
+*
+	outline: none !important;	
+header
+	margin-top: -4px;
+nav.navbar
+	border: 0;
+	margin-bottom: 0;
+	background: #fff !important;
+	@media (min-width: 502px) and (max-width: 1199px)
+		margin-bottom: 5px;
+	ul li
+		padding-left: 30px;
+		@media (min-width: 720px) and (max-width: 1079px)
+			padding-left: 20px;
+		@media (min-width: 1080px) and (max-width: 1199px)
+			padding-left: 22px;
+		@media (max-width: 719px)
+			padding-left: 10px;
+	h1 a
+		font-size: 25px;
+		color: $logo !important;
+		font-weight: 800;
+		&:hover
+			color: $logo !important;
+	a
+		font-size: 16px
+		color: $bold !important;
+		&:hover
+			color: orange !important;
+		background: transparent !important;
+.menu1
+	padding-top: 4px;
+.formsearch
+	margin-top: -4px;
+.search 
+	padding-top: 5px;
+	padding-left: 180px;
+	position: relative;
+	width: 350px;
+	@media (min-width: 720px) and (max-width: 1199px)
+		padding-left: 145px;
+	@media (min-width: 1345px)
+		padding-left: 320px;
+	@media (max-width: 719px)
+		padding-left: 10px;
+		padding-top: 13px;
+	input 
+		&::-webkit-input-placeholder
+			color: $bold;
+			font-weight: 400;
+			font-size: 15px;
+		&::-moz-placeholder
+			color: $bold;
+			font-weight: 400;
+			font-size: 15px;
+		&:-ms-input-plaseholder
+			color: $bold;
+			font-weight: 400;
+			font-size: 15px;
+	.input
+		height: 40px;
+		width: 170px;
+		border: 1px solid #f9f9f9;
+		border-radius: 20px;
+		padding: 5px 15px;
+		background: #f9f9f9;
+		color: $bold;
+		@media (min-width: 720px) and (max-width: 1199px)
+			width: 330px;
+		@media (max-width: 719px)
+			width: 310px;
+			
+	.submit
+		position: absolute;
+		top: 4px;
+		right: 11px;
+		cursor: pointer;
+		border: none;
+		height: 82%;
+		width: 13%;
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIzMnB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgZmlsbD0iIzkyOTI5MiIgaWQ9Imljb24tMTExLXNlYXJjaCI+PHBhdGggZD0iTTE5LjQyNzExNjQsMjEuNDI3MTE2NCBDMTguMDM3MjQ5NSwyMi40MTc0ODAzIDE2LjMzNjY1MjIsMjMgMTQuNSwyMyBDOS44MDU1NzkzOSwyMyA2LDE5LjE5NDQyMDYgNiwxNC41IEM2LDkuODA1NTc5MzkgOS44MDU1NzkzOSw2IDE0LjUsNiBDMTkuMTk0NDIwNiw2IDIzLDkuODA1NTc5MzkgMjMsMTQuNSBDMjMsMTYuMzM2NjUyMiAyMi40MTc0ODAzLDE4LjAzNzI0OTUgMjEuNDI3MTE2NCwxOS40MjcxMTY0IEwyNy4wMTE5MTc2LDI1LjAxMTkxNzYgQzI3LjU2MjExODYsMjUuNTYyMTE4NiAyNy41NTc1MzEzLDI2LjQ0MjQ2ODcgMjcuMDExNzE4NSwyNi45ODgyODE1IEwyNi45ODgyODE1LDI3LjAxMTcxODUgQzI2LjQ0Mzg2NDgsMjcuNTU2MTM1MiAyNS41NTc2MjA0LDI3LjU1NzYyMDQgMjUuMDExOTE3NiwyNy4wMTE5MTc2IEwxOS40MjcxMTY0LDIxLjQyNzExNjQgTDE5LjQyNzExNjQsMjEuNDI3MTE2NCBaIE0xNC41LDIxIEMxOC4wODk4NTExLDIxIDIxLDE4LjA4OTg1MTEgMjEsMTQuNSBDMjEsMTAuOTEwMTQ4OSAxOC4wODk4NTExLDggMTQuNSw4IEMxMC45MTAxNDg5LDggOCwxMC45MTAxNDg5IDgsMTQuNSBDOCwxOC4wODk4NTExIDEwLjkxMDE0ODksMjEgMTQuNSwyMSBMMTQuNSwyMSBaIiBpZD0ic2VhcmNoIi8+PC9nPjwvZz48L3N2Zz4=) no-repeat 14px 8px; 
+		background-size: 40%;
+		@media (min-width: 720px) and (max-width: 1199px)
+			right: -120px;
+			top: 5px;
+			height: 82%;
+			width: 14%;
+		@media (min-width: 1345px)
+			right: -134px;	
+		@media (max-width: 719px)
+			right: 32px;
+			top: 11px;
+			height: 62%;
+#language
+	padding-right: 20px;
+	padding-top: 19px;
+	@media (min-width: 720px) and (max-width: 1079px)
+		padding-right: 93px;
+	@media (min-width: 1080px) and (max-width: 1199px)
+		padding-right: 85px;
+	@media (max-width: 719px)
+		padding-top: 3px;
+		padding-left: 26px;
+	span.borderright
+		line-height: 1 !important;
+		border-right: 1px solid gray
+		padding-right: 5px;
+		
+	a:hover
+		font-weight: 600;
+		color: $bold !important;
+		text-decoration: none;
+.menu2
+	text-align: center;
+	ul
+		display: inline-block;
+		padding: 13px 0;
+		margin: 0 auto;
+	li
+		display: inline;
+		float: left;
+		list-style: none;
+		padding-right: 55px;
+		width: 115px;
+	li:nth-child(1)
+		margin-right: -24px;
+	a
+		color: #fff !important;
+		&:hover
+			font-weight: 600;
+			text-decoration: none !important;
+	.active
+		font-weight: 600;
+		text-decoration: none !important;
+.greenline
+	background: #52ac62;
+	height: 45px;
+	margin-top: 10px;
+.section-all
+	padding-top: 50px;
+.backgroundcolor
+	background: #f1f4f5;
+article
+	background: #fff;
+	margin-bottom: 10px;
+	border: 2px solid #e7e9ea;
+	border-radius: 5px;
+	box-shadow: 4px 4px 21px rgba(189, 195, 197, 0.34);
+	padding: 10px 15px 2px 15px;
+	tr
+		height: 23px;
+	tr:nth-child(even)
+		background: #f9f9f9;
+	tr:nth-child(1,2)
+		background: #fff;
+		height: 40px;
+	tr:nth-child(2)
+		height: 15px;
+	table
+		width: 100%
+		.pic
+			width: 27%;
+			padding-top: 0;
+			
+	th
+		color: $h1;
+		font-size: 20px;
+		ul 
+			margin-left: -40px;
+			li
+				list-style: none;
+				float: left;
+				padding-right: 25px;
+				padding-top: 3px;
+		span
+			color: $span
+			font-weight: 200;
+			padding-left: 10px;
+			padding-right: 20px;
+			&:hover a
+				text-decoration: none !important;
+		border-bottom: 2px solid #f9f9f9;
+	.estimate a
+		color: $thin !important;
+		font-size: 14px;
+		font-weight: 200;
+	.estimate
+		padding-right: 25px;
+	.toright
+		text-align: right;
+		div
+			display: inline-block;
+	.stars
+		padding-right: 0;
+	td
+		color: $bold;
+		font-weight: bold;
+		padding-right: 7px;
+		padding-top: 1px;
+.td-img
+	@media (max-width: 525px)
+		display: none;
+	.characteristic
+		padding-left: 5px;
+		@media (max-width: 525px)
+			padding-left: -135px;
+		
+	.description, .links a
+		color: $span !important;
+		font-weight: 200;
+	li label
+		font-size: 13px;
+		color: #52ac62;
+		background: #fff;
+		border-radius: 15px;
+		border: 1px solid #52ac62;
+		width: 100px;
+		height: 26px;
+		padding-top: 3px;
+		font-weight: 600;
+		text-align: center;
+		vertical-align: middle;
+		
+#bannersleft
+	padding-right: 10px
+	@media (max-width: 525px)
+		display: none;
+	img
+		margin-bottom: 15px;
+
+
+.more 
+	padding-left: 50px;
+	font-weight: 200;
+	font-size: 12px;
+	height: 25px
+	a
+		color: $span !important;
+		&:hover
+			color: $span;
+
+aside.deposits
+	padding-left: 10px;
+	
+	#wrapfordeposits
+		border: 2px solid #e7e9ea;
+		border-radius: 5px;
+		box-shadow: 4px 4px 21px rgba(189, 195, 197, 0.34);
+		padding: 0px 10px 10px 10px;
+		margin-right: -10px;
+		margin-bottom: 10px;
+		background: #fff;
+		@media (max-width: 720px)
+			width: 300px;
+	.header th
+		color: $h1
+		font-size: 20px
+		padding-left: 15px
+	.character th
+		color: $bold;
+		font-weight: 100;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: 2px solid #f9f9f9;
+	#project
+		padding-left: 15px;
+	.withoutcolor:hover
+		background: transparent;
+	tr:nth-child(odd)
+		background: #f9f9f9;
+	tr:nth-child(3)
+		background: #fff !important;
+		height: 40px;
+	tr:nth-child(2)
+		height: 15px;
+	tr	
+		&:hover
+			background: #e5e5e5;
+		td
+			font-weight: bold;
+			color: $bold;
+			font-weight: 100;
+			&:nth-child(1)
+				display: block;
+				overflow: hidden;
+				width: 160px;
+				text-overflow: ellipsis;
+				padding-right: 10px;
+				
+			&:nth-child(2)
+				text-align: right;
+				width: 120px;
+			
+section nav
+	text-align: center;
+.pagination a
+	background: #f9f9f9!important;
+	color: #fff;
+	border: 1px solid #black !important;
+	border-radius: 0 !important;
+	&:hover
+		background: $thin!important;
+footer
+	background: $span;
+	height: 70px;
+	padding: 20px;
+	text-align: right;
+	font-weight: 600;
+
+.feedbacks,.statistics
+	background: #fff;
+	padding: 10px 35px;
+	padding-right: 35px;
+	margin-bottom: 20px;
+	border: 2px solid #e7e9ea;
+	border-radius: 5px;
+	box-shadow: 4px 4px 21px rgba(189, 195, 197, 0.34);
+	a:hover
+		text-decoration: none ;
+	h2
+		font-size: 16px;
+		font-weight: 600;
+		padding: 10px 0;
+.statistics
+	div
+		margin-bottom: 25px;
+		color: $bold;
+	h2
+		border-bottom: 2px solid #f9f9f9;
+		margin-bottom: 25px;
+		padding-bottom: 16px;
+		color: #000;
+.feedbacks
+	textarea
+		margin-left: 10px;
+		width: 97%
+		margin-top: 5px;
+	label, button
+		color: $bold;
+	h3
+		color: #a94242;
+		font-size: 12px;
+#menu
+	margin-bottom: 55px;
+	margin-top: 20px;
+	margin-left: -40px;
+	li
+		padding-right: 30px;
+		list-style: none;
+		float: left
+	a
+		font-weight: 600;
+		&:hover, &:active
+			color: #000 !important;
+			border-bottom: 2px solid #ffc800;
+#comment
+	margin-bottom: 10px;
+.reviewline
+	color: $thin;
+	margin-left: 15px;
+.whenadded, .whoadded
+		display: inline-block
+		padding-right: 20px;
+		padding-top: 4px;
+.textcomment
+	margin-top: 10px;
+.whoadded span
+	padding: 0 10px;
+	a
+		color: #000 !important;
+		font-weight: 600;
+#mark
+	margin-left: 139px;
+	padding: 0;
+/* рейтинг */
+.rating, .fixedrating
+	padding-top: 2px;
+	label
+		position: relative
+		display: inline
+		float: left
+		z-index: 1
+		width: 16px
+		height: 12px
+.rating
+	input[type=radio]
+		z-index: 2
+		display: inline
+		float: left
+		width: 16px
+		height: 16px
+.star
+	background: url(../img/star.jpg) 0 -16px;
+.fixedstar
+	background: url(../img/star.jpg) 0 -32px;
+.star, .fixedstar	
+	height: 16px
+	width: 16px
+	z-index: 1
+	position: absolute
+	top: 0
+	display: block
+	cursor: pointer
+	top: 3px
+	left: -16px
+
+.rating:hover .star
+  background-position: 0 -32px
+
+input:checked
+  ~ label .star
+    background-position: 0 0
+  + label .star
+    background-position: 0 -16px
+
+label:hover ~ label .star
+  background-position: 0 0 !important
